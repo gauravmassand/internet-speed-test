@@ -28,7 +28,7 @@ public class PythonProcess {
             }
             logger.info("Speed process completed successfully");
         } catch (IOException e) {
-            logger.error("Exception while running script {}", e);
+            logger.error("Exception while running script {}", e.getMessage());
         }
         return speed;
     }
