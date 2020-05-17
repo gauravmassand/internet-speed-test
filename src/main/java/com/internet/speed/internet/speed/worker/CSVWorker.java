@@ -28,6 +28,7 @@ public class CSVWorker implements Runnable {
             String[] csvObjectData = {csvObject.getCurrentDateTime(), String.valueOf(csvObject.getSpeed())};
             csvWriter.writeNext(csvObjectData);
             csvWriter.close();
+            logger.info("Writing to file completed");
         } catch (Exception e) {
             logger.error("Error while writing to file {}", e.getMessage());
         }
