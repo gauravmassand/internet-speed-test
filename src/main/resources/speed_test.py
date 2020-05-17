@@ -9,7 +9,7 @@ def get_speeds():
         download_mbps = round(download / (10 ** 6), 2)
         print(download_mbps)
     except:
-        print(-1)
+        print(0)
 
 
 get_speeds()
